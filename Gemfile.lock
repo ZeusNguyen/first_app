@@ -158,9 +158,14 @@ GEM
     timeout (0.3.2)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    versionist (1.7.0)
+      activesupport (>= 3)
+      railties (>= 3)
+      yard (~> 0.9.11)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    yard (0.9.34)
     zeitwerk (2.6.7)
 
 PLATFORMS
@@ -175,6 +180,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
   tzinfo-data
+  versionist
 
 RUBY VERSION
    ruby 3.2.2p53

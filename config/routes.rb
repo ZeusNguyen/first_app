@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
-  namespace :api do
-    namespace :v1 do
-      resources :users
-    end
+  # api_version(:module => "api/v1", :path => { :value => "v1" }) do
+  #   resources :users
+  # end
+
+  # api_version(:module => "api/v2", :path => { :value => "v2" }) do
+  #   resources :users
+  # end
+  namespace :v1 do
+    resources :users
   end
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  # Defines the root path route ("/")
-  # root "articles#index"
+
+  namespace :v2 do
+    resources :users
+  end
 end
